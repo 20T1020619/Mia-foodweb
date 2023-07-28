@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MiaFood</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./assets/img/logo1.png" class="logo" alt="logo" />
+                        </a>
+                        <span class="header__logo-text">MIAFOOD</span>
+                    </div>
+
+                    <ul id="navbar">
+                        <li><a href="banggia.html">BẢNG GIÁ</a></li>
+                        <li><a class="navbar--selected" href="#sapham">SẢN PHẨM</a></li>
+                        <li><a href="#khuyenmai">KHUYẾN MÃI</a></li>
+                        <li><a href="theodoidonhang.html">THEO DÕI ĐƠN HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="header__banner"></div>
+        <main style="background-color: #f7fafa; overflow: hidden">
+            <div class="products">
+                <div class="container">
+                    <div class="product__container">
+                        <h3 class="product__title">các loại sản phẩm</h3>
+                    </div>
+                    <div class="product__list"></div>
+
+                    <div class="product__cost-wrapper">
+                        <h4 class="product__cost-title">bảng giá sỉ đồ ăn vặt mia food 2023</h4>
+                        <p class="product__cost-description">
+                            Chuyên sỉ đồ ăn vặt cung cấp đồ ăn vặt giá sỉ cạnh tranh. Menu hơn 200
+                            món ăn vặt ngon lựa chọn sản phẩm có nguồn gốc xuất xứ đảm bảo chất
+                            lượng an toàn vệ sinh thực phẩm. Giao hàng nhanh trên toàn quốc.
+                        </p>
+                        <div class="product__cost-form">
+                            <span>Tìm kiếm:</span>
+                            <input type="text" class="product__cost-input" />
+                        </div>
+                        <div class="product__table">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr role="row">
+                                        <th
+                                            style="width: 99.4px"
+                                            role="columnheader"
+                                            rowspan="1"
+                                            colspan="1"
+                                        ></th>
+                                        <th
+                                            class="product__table-title"
+                                            role="columnheader"
+                                            tabindex="0"
+                                            aria-controls="tbl"
+                                            rowspan="1"
+                                            colspan="1"
+                                            aria-label="SẢN PHẨM: activate to sort column ascending"
+                                            style="width: 348.4px"
+                                        >
+                                            SẢN PHẨM
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                    <tr>
+                                        <td class="product__img">
+                                            <div>
+                                                <img
+                                                    src="./assets/img/banh-sua-chua-ong-gia.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </td>
+                                        <td class="product__info">
+                                            <strong class="product__detail-name"
+                                                >Bánh sữa chua ông già
+                                            </strong>
+                                            <div>
+                                                <input type="checkbox" />
+                                                <span class="product__">300.000 - 2kg</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale">
+                <div class="sale__banner">
+                    <div class="sale__overlay"></div>
+                    <div class="container">
+                        <div class="sale__list-wrapper">
+                            <!-- <div class="sale__item">
+                                <h3 sale__item-title></h3>
+                                <div class="sale__img">
+                                    <img src="./assets/img/Combo5mon-250k.jpg" alt="" />
+                                </div>
+                                <ul class="sale__list">
+                                    <li class="sale__item-text">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Khô bò miếng 300gr</span>
+                                    </li>
+                                    <li class="sale__item-text">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Mực sợi hấp dừa 250gr</span>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="policy">
+                <div class="policy__banner">
+                    <div class="policy__overlay"></div>
+                    <div class="container">
+                        <div class="policy__container">
+                            <span class="policy__star"><i class="fa-regular fa-star"></i></span>
+                            <span class="policy__heading">Chính sách sỉ</span>
+                            <div class="policy__list">
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">sỉ mức i</h4>
+                                    <p>- Số lượng từ 10 đến 29 sản phẩm bất kì</p>
+                                </div>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">sỉ mức ii</h4>
+                                    <p>- Số lượng từ 30 đến 59 sản phẩm bất kì</p>
+                                    <p>- Chiết khấu thêm 1.000đ trên mỗi sản phẩm</p>
+                                </div>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">sỉ mức iii</h4>
+                                    <p>- Số lượng từ 60 đến 199 sản phẩm bất kì</p>
+                                    <p>- Chiết khấu thêm 2.000đ trên mỗi sản phẩm</p>
+                                </div>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">sỉ mức iv</h4>
+                                    <p>- Số lượng từ 200 sản phẩm bất kì</p>
+                                    <p>- Chiết khấu thêm 3.000đ trên mỗi sản phẩm</p>
+                                </div>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">nhà phân phối</h4>
+                                    <p>- Số lượng từ 400 sản phẩm bất kì</p>
+                                    <p>
+                                        - Liên hệ zalo:
+                                        <strong>0869918618</strong>
+                                        để được tư vấn
+                                    </p>
+                                </div>
+                                <span class="policy__star"><i class="fa-regular fa-star"></i></span>
+                                <span class="policy__heading">Chính sách đổi trả</span>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">1. Điều kiện đổi trả</h4>
+                                    <p>
+                                        Quý Khách hàng cần kiểm tra tình trạng hàng hóa và có thể
+                                        đổi hàng hoặc trả lại hàng ngay tại thời điểm giao, nhận
+                                        hàng trong những trường hợp sau:
+                                    </p>
+                                    <p>- Số lượng từ 200 sản phẩm bất kì</p>
+                                    <p>- Chiết khấu thêm 3.000đ trên mỗi sản phẩm</p>
+                                </div>
+                                <div class="policy__item">
+                                    <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span>
+                                    <h4 class="policy__title">1. Điều kiện đổi trả</h4>
+                                    <p>
+                                        Quý Khách hàng cần kiểm tra tình trạng hàng hóa và có thể
+                                        đổi hàng hoặc trả lại hàng ngay tại thời điểm giao, nhận
+                                        hàng trong những trường hợp sau:
+                                    </p>
+                                    <p>
+                                        - Hàng không đúng chủng loại, mẫu mã trong đơn hàng đã đặt
+                                        hoặc như trên website tại thời điểm đặt hàng.
+                                    </p>
+                                    <p>- Không đủ số lượng, không đủ bộ như trong đơn hàng.</p>
+                                    <p>
+                                        - Tình trạng bên ngoài bị ảnh hưởng như rách bao bì, bong
+                                        tróc, bể vỡ…
+                                    </p>
+                                    <p>
+                                        - Khách hàng có trách nhiệm trình giấy tờ liên quan chứng
+                                        minh sự thiếu sót trên để hoàn thành việc hoàn trả hoặc đổi
+                                        trả hàng hóa.
+                                    </p>
+                                </div>
+                                <div class="policy__item">
+                                    <!-- <span class="policy__icon"
+                                        ><i class="fa-regular fa-bookmark"></i
+                                    ></span> -->
+                                    <h4 class="policy__title">
+                                        2. Quy định về thời gian thông báo và gửi sản phẩm đổi trả
+                                    </h4>
+                                    <p>
+                                        - Thời gian thông báo đổi trả: trong vòng 24h kể từ khi nhận
+                                        sản phẩm đối với trường hợp sản phẩm thiếu phụ kiện, quà
+                                        tặng hoặc bể vỡ.
+                                    </p>
+                                    <p>
+                                        - Thời gian gửi chuyển trả sản phẩm: trong vòng 03 ngày kể
+                                        từ khi nhận sản phẩm.
+                                    </p>
+                                    <p>
+                                        - Địa điểm đổi trả sản phẩm: Khách hàng có thể mang hàng
+                                        trực tiếp đến văn phòng, cửa hàng của chúng tôi hoặc chuyển
+                                        qua đường bưu điện.
+                                    </p>
+                                    <p>
+                                        - Trong trường hợp Quý Khách hàng có ý kiến đóng góp hoặc
+                                        khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng
+                                        vui lòng liên hệ đường dây chăm sóc khách hàng của chúng
+                                        tôi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__heading">Tại sao bạn nên chọn Minh Anh Food?</h3>
+                        <div class="container">
+                            <div class="reason__list">
+                                <div class="reason__item">
+                                    <div class="reason__icon">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </div>
+                                    <h4 class="reason__title">Đổi Trả</h4>
+                                    <p class="reason__description">
+                                        Đổi trả hoặc hoàn tiền nếu sản phẩm hư hoặc không đúng như
+                                        mô tả hình ảnh sản phẩm đăng
+                                    </p>
+                                </div>
+                                <div class="reason__item">
+                                    <div class="reason__icon">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </div>
+                                    <h4 class="reason__title">Giao hàng</h4>
+                                    <p class="reason__description">
+                                        Giao hàng đảm bảo chất lượng ATVSTP, giao hàng nhanh và đóng
+                                        gói cẩn thận chắc chắn
+                                    </p>
+                                </div>
+                                <div class="reason__item">
+                                    <div class="reason__icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <h4 class="reason__title">Hỗ trợ</h4>
+                                    <p class="reason__description">
+                                        Chăm sóc khách hàng nhiệt tình và giải quyết các vấn đề một
+                                        cách nhanh chóng nhất.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="container">
+                            <div class="contact__container">
+                                <h4 class="contact__heading">liên hệ đặt hàng với chúng tôi</h4>
+                                <ul class="contact__list">
+                                    <li class="contact__item">
+                                        <a target="_blank" data-link="zalo-chat"
+                                            ><img src="./assets/img/Logo-zalo.png" alt=""
+                                        /></a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a target="_blank" data-link="messenger-chat"
+                                            ><img src="./assets/img/messenger.png" alt=""
+                                        /></a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a target="_blank" data-link="zalo-chat"
+                                            ><img src="./assets/img/phone-call-icon.png" alt=""
+                                        /></a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a target="_blank" data-link="gmail-chat"
+                                            ><img src="./assets/img/mail.png" alt=""
+                                        /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer__contact">
+                <div class="container">
+                    <div class="footer__list">
+                        <div class="footer__item">
+                            <div class="footer__icon">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <ul class="footer__description">
+                                <li><span>KHO MIAFOOD</span></li>
+                                <li>Email: <span>contact@miafood.com</span></li>
+                                <li>Hotline : <span>0869918618</span></li>
+                                <li>GPKD: 0317513434</li>
+                                <li>SỐ ATVSTP: GOODVNA07122.HACCP</li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__icon">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+                            <h5 class="footer__heading">Sản phẩm</h5>
+                            <ul class="footer__description footer__description--transtition">
+                                <li>Đồ ăn vặt</li>
+                                <li>Khô tẩm vị</li>
+                                <li>Bánh các loại</li>
+                                <li>Kẹo các loại</li>
+                                <li>Các loại đậu</li>
+                                <li>Hạt dinh dưỡng</li>
+                                <li>Trái cây sấy</li>
+                                <li>Mứt các loại</li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__icon">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <h5 class="footer__heading">Liên kết</h5>
+                            <ul class="footer__description footer__description--transtition">
+                                <li>Fan Page</li>
+                                <li>Zalo Official</li>
+                                <li>Zalo nhóm sỉ</li>
+                                <li>Bảng giá sỉ</li>
+                                <li>Bảng giá lẻ</li>
+                                <li>Shopee</li>
+                                <li>Lazada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__policy">
+                <div class="container">
+                    <div class="footer__policy-text">
+                        <span style="margin-right: 125px">chính sách bảo mật</span>
+                        <span>quy chế hoạt động</span>
+                    </div>
+                    <div class="footer__policy-logo">
+                        <div>
+                            <img
+                                src="./assets/img/logoSaleNoti.png"
+                                alt=""
+                                style="width: 160px !important"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./assets/img/haccp.jpg"
+                                alt=""
+                                style="width: 80px !important"
+                            />
+                        </div>
+                    </div>
+                    <ul class="footer__policy-info">
+                        <li>CÔNG TY TNHH TMDV THỰC PHẨM MINH ANH</li>
+                        <li>
+                            Địa chỉ: 56 Bis Trương Đình Hội, Phường 16, Quận 8, Thành Phố Hồ Chí
+                            Minh, Việt Nam.
+                        </li>
+                        <li>
+                            Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Thị Anh Thư - Điện thoại liên
+                            hệ: 0869918618
+                        </li>
+                        <li>
+                            Mã số doanh nghiệp: 0317513434 do Sở Kế hoạch & Đầu tư TP HCM cấp lần
+                            đầu ngày 12/10/2022
+                        </li>
+                        <li>© 2022 - Bản quyền thuộc về CÔNG TY TNHH TMDV THỰC PHẨM MINH ANH</li>
+                    </ul>
+                    <p class="footer__policy-version">Version build: 1.7</p>
+                </div>
+            </div>
+            </footer>
+            <div id="category_list" class="menu_rightlist" >
+                <a href="#menu">
+                    <img src="./assets/img/hang-nhap-khau.jpg" alt="hàng nhập khẩu">
+                    <span>Hàng nhập khẩu</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/kho-ca-loai.jpg" alt="các loại khô">
+                    <span>Khô</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/do-an-vat.jpg" alt="đồ ăn vặt">
+                    <span>Món ăn vặt</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/hat-dinh-duong.jpg" alt="hạt ding dưỡng">
+                    <span>Hạt</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/banh-cac-loai.jpg" alt="các loại bánh">
+                    <span>Bánh</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/banh-keo.jpg" alt="kẹo các loại">
+                    <span>Kẹo</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/trai-cay-say.jpg" alt="trái cây sấy & mức">
+                    <span>Trái cây sấy</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/mut-cac-loai.jpg" alt="mứt các loại">
+                    <span>Mứt</span>
+                </a>
+                <a href="#menu">
+                    <img src="./assets/img/cac-loai-dau.jpg" alt="đậu các loại">
+                    <span>Đậu</span>
+                </a>
+            </div>
+            <div class="contact_icon" status="1" style="transform: rotateY(1turn);">
+                <img src="./assets/img/icon-support.png" alt="liên hệ hỗ trợ">
+            </div>
+            <div class="contact_box" class="menu_right" style="right: 75px;">
+                <a href="tel:+84923563780" class="link_contact">
+                    <img src="./assets/img/phone-call-icon.png" alt="gọi điện">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100012370246020" class="link_contact">
+                    <img src="./assets/img/messenger.png" alt="liên hệ messenger">
+                </a>
+                <a target="_blank" href="https://miafood.vn/giasi/lien-he-zalo" class="link_contact">
+                    <img src="/assets/img/logo-zalo.png" alt="liên hệ zalo">
+                </a>    
+            </div>
+            <div class="menu_right">
+                <div class="sidebar">
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping" href="javascript:void(0)" style="cursor: pointer;" onclick="showcart()" ></i>
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ordercart" >
+                <form id="frm" method="post" action="javascript:ConfimOder"></form>
+                    <table id="tbl_ordercart" class="tabletbl">
+                        <thead>
+                            <tr class="mau">
+                                <th colspan="6">
+                                    <strong>
+                                     <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                        <span>chi tiết bán hàng</span>
+                                    </strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="col1"></th>
+                                <th class="col2">SẢN PHẨM</th>
+                                <th class="col3">TL</th>
+                                <th class="col4">SL</th>
+                                <th class="col5">GIÁ</th>
+                                <th class="col6">T.TIỀN</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6">Không có sản phẩm!</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="p1">Tổng số lượng</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Trọng lượng</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Thành tiền</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Phí ship</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Giảm giá</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Chiết khấu</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="p1">Tổng cộng</td>
+                            <td id="total_product" class="p1">0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="6">
+                                <strong>
+                                    <i class="bi bi-person-circle"></i>
+                                    <span>THÔNG TIN NGƯỜI NHẬN HÀNG</span>
+                                </strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Họ Tên</th>
+                            <th colspan="4">
+                                <input id="txtname" type="text" class="form-control" maxlength="100" required placeholder="Họ tên *"> 
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Số Điện Thoại</th>
+                            <th colspan="4">
+                                <input id="txtphone" type="text" class="form-control" maxlength="12" required placeholder="Số điện thoại *"> 
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Thành phố/Tỉnh thành</th>
+                            <th colspan="4">
+                                <select id="city" type="text" class="form-control" aria-label=".form-select-sm">
+                                    <option value="" selected>Vui lòng chọn</option> 
+                                    </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Quận/Huyện</th>
+                            <th colspan="4">
+                                <select id="district" type="text" class="form-control" aria-label=".form-select-sm">
+                                    <option value="" selected>Vui lòng chọn</option> 
+                                    </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Phường</th>
+                            <th colspan="4">
+                                <select id="ward" type="text" class="form-control" aria-label=".form-select-sm">
+                                    <option value="" selected>Vui lòng chọn</option> 
+                                    </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Địa chỉ</th>
+                            <th colspan="4">
+                                <input id="txtaddress" type="text" class="form-control" maxlength="500" required placeholder="Địa chỉ *"> 
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mã Voucher</th>
+                            <th colspan="4">
+                                <input  type="text" class="form-control" maxlength="20"> 
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Ghi chú đơn hàng</th>
+                            <th colspan="4">
+                                <input  type="text" class="form-control" maxlength="20"> 
+                            </th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                    <div class="ordercart_footer">
+                        <div class="container1">
+                            <button type="button" class="btn btn-dark" id="btn-close">
+                                <i class="bi bi-x-circle"></i>
+                                Đóng
+                            </button>
+                            <button type="submit" class="btn btn-info" id="btn-order">
+                                Xác nhận đặt hàng
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+                    </div>
+                </from>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        var citis = document.getElementById("city");
+var districts = document.getElementById("district");
+var wards = document.getElementById("ward");
+var Parameter = {
+  url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
+  method: "GET", 
+  responseType: "application/json", 
+};
+var promise = axios(Parameter);
+promise.then(function (result) {
+  renderCity(result.data);
+});
+
+function renderCity(data) {
+  for (const x of data) {
+    citis.options[citis.options.length] = new Option(x.Name, x.Id);
+  }
+  citis.onchange = function () {
+    district.length = 1;
+    ward.length = 1;
+    if(this.value != ""){
+      const result = data.filter(n => n.Id === this.value);
+
+      for (const k of result[0].Districts) {
+        district.options[district.options.length] = new Option(k.Name, k.Id);
+      }
+    }
+  };
+  district.onchange = function () {
+    ward.length = 1;
+    const dataCity = data.filter((n) => n.Id === citis.value);
+    if (this.value != "") {
+      const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+      for (const w of dataWards) {
+        wards.options[wards.options.length] = new Option(w.Name, w.Id);
+      }
+    }
+  };
+}
+</script>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
